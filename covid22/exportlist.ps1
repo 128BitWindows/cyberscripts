@@ -1,0 +1,2 @@
+Get-ADComputer -Filter * -Properties * | Select-Object -ExpandProperty name | Format-Table -HideTableHeaders | out-file C:\covid22\complist.txt
+Get-DnsServerZone | Select-Object -ExpandProperty ZoneName | Format-Table -HideTableHeaders | out-file C:\covid22\dnooslist.txt
